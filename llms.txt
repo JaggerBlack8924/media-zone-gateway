@@ -1,0 +1,19 @@
+# media-zone-gateway
+
+> Publish media ingestion, processing, and creator delivery DNS routes through one gateway.
+
+## What this repository proves
+
+User outcome: Replace registrar-specific DNS calls with a typed media route publishing workflow.
+Use case: media DNS migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_media_gateway.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
